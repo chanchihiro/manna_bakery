@@ -18,8 +18,11 @@ body {
 	margin: 0 auto;
 	#manna_header {
 		margin-top: 96px;
+		overflow: hidden;
+		margin-bottom: 40px;
 		#title_logo {
 			width: 260px;
+			float: left;
 			img {
 				width: 100%;
 			}
@@ -39,10 +42,27 @@ body {
 			}
 		}
 	}
+	#manna_message {
+		text-align: center;
+		padding-bottom: 36px;
+		img {
+			width: 100%;
+		}
+		#manna_text_message {
+			margin-top: 56px;
+			h2 {
+				padding-bottom: 56px;
+				font-size: 24px;
+			}
+			p {
+				line-height: 44px;
+				margin-bottom: 56px;
+			}
+		}
+	}
 }
 
 footer {
-	position: absolute;
 	width: 100%;
 	bottom: 8px;
 	p {

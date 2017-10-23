@@ -145,9 +145,12 @@ body {
   width: 980px;
   margin: 0 auto; }
   #manna_main #manna_header {
-    margin-top: 96px; }
+    margin-top: 96px;
+    overflow: hidden;
+    margin-bottom: 40px; }
     #manna_main #manna_header #title_logo {
-      width: 260px; }
+      width: 260px;
+      float: left; }
       #manna_main #manna_header #title_logo img {
         width: 100%; }
     #manna_main #manna_header #menu_list {
@@ -159,9 +162,21 @@ body {
           text-decoration: none;
           color: #292929;
           margin-left: 20px; }
+  #manna_main #manna_message {
+    text-align: center;
+    padding-bottom: 36px; }
+    #manna_main #manna_message img {
+      width: 100%; }
+    #manna_main #manna_message #manna_text_message {
+      margin-top: 56px; }
+      #manna_main #manna_message #manna_text_message h2 {
+        padding-bottom: 56px;
+        font-size: 24px; }
+      #manna_main #manna_message #manna_text_message p {
+        line-height: 44px;
+        margin-bottom: 56px; }
 
 footer {
-  position: absolute;
   width: 100%;
   bottom: 8px; }
   footer p {
