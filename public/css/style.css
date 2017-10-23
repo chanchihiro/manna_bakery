@@ -163,18 +163,49 @@ body {
           color: #292929;
           margin-left: 20px; }
   #manna_main #manna_message {
-    text-align: center;
-    padding-bottom: 36px; }
+    text-align: center; }
     #manna_main #manna_message img {
       width: 100%; }
     #manna_main #manna_message #manna_text_message {
-      margin-top: 56px; }
+      padding-top: 56px;
+      padding-bottom: 36px;
+      background-color: #e6e6e6; }
       #manna_main #manna_message #manna_text_message h2 {
         padding-bottom: 56px;
         font-size: 24px; }
       #manna_main #manna_message #manna_text_message p {
         line-height: 44px;
         margin-bottom: 56px; }
+      #manna_main #manna_message #manna_text_message a {
+        text-decoration: none;
+        color: #fff;
+        padding: 7px 22px;
+        background-color: #F2C0BD; }
+  #manna_main .manna_block {
+    margin-top: 64px; }
+    #manna_main .manna_block .title_heading {
+      margin-bottom: 20px;
+      font-size: 24px; }
+    #manna_main .manna_block #manna_btn_seemore_right {
+      float: right;
+      text-decoration: none;
+      color: #fff;
+      padding: 7px 22px;
+      background-color: #F2C0BD; }
+  #manna_main #manna_block_news {
+    overflow: hidden; }
+    #manna_main #manna_block_news #manna_feed_news {
+      margin-bottom: 8px; }
+      #manna_main #manna_block_news #manna_feed_news dl {
+        overflow: hidden;
+        margin-bottom: 16px; }
+        #manna_main #manna_block_news #manna_feed_news dl dt {
+          float: left;
+          clear: left;
+          margin-right: 52px; }
+        #manna_main #manna_block_news #manna_feed_news dl dd {
+          float: left;
+          margin-right: 52px; }
 
 footer {
   width: 100%;

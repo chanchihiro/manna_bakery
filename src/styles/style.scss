@@ -44,12 +44,13 @@ body {
 	}
 	#manna_message {
 		text-align: center;
-		padding-bottom: 36px;
 		img {
 			width: 100%;
 		}
 		#manna_text_message {
-			margin-top: 56px;
+			padding-top: 56px;
+			padding-bottom: 36px;
+			background-color: #e6e6e6;
 			h2 {
 				padding-bottom: 56px;
 				font-size: 24px;
@@ -57,6 +58,45 @@ body {
 			p {
 				line-height: 44px;
 				margin-bottom: 56px;
+			}
+			a {
+				text-decoration: none;
+				color: $white;
+				padding: 7px 22px;
+				background-color: #F2C0BD;
+			}
+		}
+	}
+	.manna_block {
+		margin-top: 64px;
+		.title_heading {
+			margin-bottom: 20px;
+			font-size: 24px;
+		}
+		#manna_btn_seemore_right {
+			float: right;
+			text-decoration: none;
+			color: $white;
+			padding: 7px 22px;
+			background-color: #F2C0BD;
+		}
+	}
+	#manna_block_news {
+		overflow: hidden;
+		#manna_feed_news {
+			margin-bottom: 8px;
+			dl {
+				overflow: hidden;
+				margin-bottom: 16px;
+				dt {
+					float: left;
+					clear: left;
+					margin-right: 52px;
+				}
+				dd {
+					float: left;
+					margin-right: 52px;
+				}
 			}
 		}
 	}
