@@ -4,157 +4,40 @@
 @import "lib/mixins"; //ブレイクポイントの設定
 
 body {
-	font-family: "yu gothic", sans-serif;
+	font-family: "hiragino", serif;
 	font-size: 14px;
-	background-color: #eee;
-	color: #222222;
+	background-color: #fff;
+	color: $black;
 	@include max-screen($breakpoint-mobile) {
-		font-size: 13px;
+		font-size: 12px;
 	}
 }
 
-.connect {
-	width: 100%;
-	height: 100vh;
+#manna_main {
+	width: 980px;
 	margin: 0 auto;
-	max-width: 750px;
-	background-color: #fff;
-	#connect_header {
-		width: 100%;
-		overflow: hidden;
-		position: relative;
+	#manna_header {
+		margin-top: 96px;
 		#title_logo {
-			width: 30%;
-			float: left;
+			width: 260px;
 			img {
 				width: 100%;
 			}
 		}
-		#info {
-			display: inline-block;
+		#menu_list {
 			float: right;
-			margin-right: 16px;
-			line-height: 62px;
-		}
-	}
-	#connect_sign {
-		width: 80%;
-		margin: 30px auto 0px;
-		#login-input-area {
-			.hide {
-				display: none;
-			}
-			button {
-				text-align: center;
-				display: block;
-				box-sizing: border-box; 
-				width: 100%;
-				border: 1px #e6e6e6 solid;
-				border-radius: 3px;
-				padding: 10px 8px;
-				margin-bottom: 4px;
-				cursor: pointer;
-			}
-			#or {
-				text-align: center;
-				display: block;
-				box-sizing: border-box;
-				color: #000;
-				width: 100%;
-				padding: 8px;
-				margin-bottom: 4px;
-			}
-			input {
-				display: block;
-				box-sizing: border-box;
-				width: 100%;
-				border: 1px #e6e6e6 solid;
-				border-radius: 3px;
-				padding: 8px;
-				margin-bottom: 4px;
-				cursor: pointer;
-			}
-		}
-		#haveaccount {
-			width: 100%;
-			text-align: center;
-			margin-top: 20px;
-			button {
-				color: #68a2ff;
-			}
-		}
-		.hide {
-			display: none !important;
-		}
-	}
-	#connect_content {
-		width: 80%;
-		margin: 30px auto 0px;
-		#connect_content_btns {
-			button {
-				box-sizing: border-box;
-				width: 100%;
-				border: 1px #e6e6e6 solid;
-				border-radius: 3px;
-				padding: 8px;
-				margin-bottom: 4px;
-				cursor: pointer;
-				color: #fff;
-			}
-			#btn_iraira {
-				background-color: #f4426b;
-				border: 1px #f4426b solid;
-			}
-			#btn_nadenade {
-				background-color: #41b8f4;
-				border: 1px #41b8f4 solid;
-			}
-		}
-		#connect_content_display {
-			width: 100%;
-			text-align: center;
-			margin-top: 10%;
-			#chara {
-				overflow: hidden;
-				text-align: center;
-			}
-			#display {
-				width: 100%;
-				overflow: hidden;
-				font-size: 16px;
-				#display_iraira {
-					width: 50%;
+			ul {
+				li {
 					float: left;
-					p {
-						margin-bottom: 4px;
-					}
-				}
-				#display_nadenade {
-					width: 50%;
-					float: left;
-					p {
-						margin-bottom: 4px;
+					list-style-type: none;
+					a {
+						text-decoration: none;
+						color: $black;
+						margin-left: 20px;
 					}
 				}
 			}
 		}
-	}
-	#logout {
-		display: block;
-		position: absolute;
-		bottom: 6%;
-		right: 0;
-		left: 0;
-		width: 80%;
-		margin: 0 auto;
-		text-align: center;
-		border: 1px #e6e6e6 solid;
-		border-radius: 3px;
-		padding: 10px 8px;
-		cursor: pointer;
-	}
-	.hide {
-		display: none !important;
 	}
 }
 
@@ -166,11 +49,6 @@ footer {
 		text-align: center;
 	}
 }
-
-.hide {
-	display: none;
-}
-
 
 
 

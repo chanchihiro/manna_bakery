@@ -43,11 +43,6 @@
   src: local("Yu Gothic Bold");
   font-weight: bold; }
 
-.vertical {
-  writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
-  -webkit-writing-mode: vertical-rl; }
-
 * {
   padding: 0;
   margin: 0; }
@@ -138,128 +133,32 @@
   padding: 8rem 8rem; }
 
 body {
-  font-family: "yu gothic", sans-serif;
+  font-family: "hiragino", serif;
   font-size: 14px;
-  background-color: #eee;
-  color: #222222; }
+  background-color: #fff;
+  color: #292929; }
   @media screen and (max-width: 750px) {
     body {
-      font-size: 13px; } }
+      font-size: 12px; } }
 
-.connect {
-  width: 100%;
-  height: 100vh;
-  margin: 0 auto;
-  max-width: 750px;
-  background-color: #fff; }
-  .connect #connect_header {
-    width: 100%;
-    overflow: hidden;
-    position: relative; }
-    .connect #connect_header #title_logo {
-      width: 30%;
-      float: left; }
-      .connect #connect_header #title_logo img {
+#manna_main {
+  width: 980px;
+  margin: 0 auto; }
+  #manna_main #manna_header {
+    margin-top: 96px; }
+    #manna_main #manna_header #title_logo {
+      width: 260px; }
+      #manna_main #manna_header #title_logo img {
         width: 100%; }
-    .connect #connect_header #info {
-      display: inline-block;
-      float: right;
-      margin-right: 16px;
-      line-height: 62px; }
-  .connect #connect_sign {
-    width: 80%;
-    margin: 30px auto 0px; }
-    .connect #connect_sign #login-input-area .hide {
-      display: none; }
-    .connect #connect_sign #login-input-area button {
-      text-align: center;
-      display: block;
-      box-sizing: border-box;
-      width: 100%;
-      border: 1px #e6e6e6 solid;
-      border-radius: 3px;
-      padding: 10px 8px;
-      margin-bottom: 4px;
-      cursor: pointer; }
-    .connect #connect_sign #login-input-area #or {
-      text-align: center;
-      display: block;
-      box-sizing: border-box;
-      color: #000;
-      width: 100%;
-      padding: 8px;
-      margin-bottom: 4px; }
-    .connect #connect_sign #login-input-area input {
-      display: block;
-      box-sizing: border-box;
-      width: 100%;
-      border: 1px #e6e6e6 solid;
-      border-radius: 3px;
-      padding: 8px;
-      margin-bottom: 4px;
-      cursor: pointer; }
-    .connect #connect_sign #haveaccount {
-      width: 100%;
-      text-align: center;
-      margin-top: 20px; }
-      .connect #connect_sign #haveaccount button {
-        color: #68a2ff; }
-    .connect #connect_sign .hide {
-      display: none !important; }
-  .connect #connect_content {
-    width: 80%;
-    margin: 30px auto 0px; }
-    .connect #connect_content #connect_content_btns button {
-      box-sizing: border-box;
-      width: 100%;
-      border: 1px #e6e6e6 solid;
-      border-radius: 3px;
-      padding: 8px;
-      margin-bottom: 4px;
-      cursor: pointer;
-      color: #fff; }
-    .connect #connect_content #connect_content_btns #btn_iraira {
-      background-color: #f4426b;
-      border: 1px #f4426b solid; }
-    .connect #connect_content #connect_content_btns #btn_nadenade {
-      background-color: #41b8f4;
-      border: 1px #41b8f4 solid; }
-    .connect #connect_content #connect_content_display {
-      width: 100%;
-      text-align: center;
-      margin-top: 10%; }
-      .connect #connect_content #connect_content_display #chara {
-        overflow: hidden;
-        text-align: center; }
-      .connect #connect_content #connect_content_display #display {
-        width: 100%;
-        overflow: hidden;
-        font-size: 16px; }
-        .connect #connect_content #connect_content_display #display #display_iraira {
-          width: 50%;
-          float: left; }
-          .connect #connect_content #connect_content_display #display #display_iraira p {
-            margin-bottom: 4px; }
-        .connect #connect_content #connect_content_display #display #display_nadenade {
-          width: 50%;
-          float: left; }
-          .connect #connect_content #connect_content_display #display #display_nadenade p {
-            margin-bottom: 4px; }
-  .connect #logout {
-    display: block;
-    position: absolute;
-    bottom: 6%;
-    right: 0;
-    left: 0;
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    border: 1px #e6e6e6 solid;
-    border-radius: 3px;
-    padding: 10px 8px;
-    cursor: pointer; }
-  .connect .hide {
-    display: none !important; }
+    #manna_main #manna_header #menu_list {
+      float: right; }
+      #manna_main #manna_header #menu_list ul li {
+        float: left;
+        list-style-type: none; }
+        #manna_main #manna_header #menu_list ul li a {
+          text-decoration: none;
+          color: #292929;
+          margin-left: 20px; }
 
 footer {
   position: absolute;
@@ -267,6 +166,3 @@ footer {
   bottom: 8px; }
   footer p {
     text-align: center; }
-
-.hide {
-  display: none; }

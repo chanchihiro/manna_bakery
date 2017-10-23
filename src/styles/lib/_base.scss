@@ -2,7 +2,7 @@
 
 ////////// 指定する色
 $white: #fff;
-$black: #000;
+$black: #292929;
 
 ////////// SNS
 $twitter: #34a1c8 !important;
@@ -61,13 +61,3 @@ $nicovideo: #efb10a !important;
   font-weight: bold;
 }
 
-
-/////// Typography
-// Font-size
-
-//縦書き
-.vertical {
-	writing-mode: vertical-rl;
-	-ms-writing-mode: tb-rl;
-	-webkit-writing-mode:vertical-rl;
-}
