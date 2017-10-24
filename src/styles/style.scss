@@ -131,6 +131,40 @@ body {
 	}
 }
 
+@mixin hero_top {
+	width: 100%;
+	height: 380px;
+	background-size: cover;
+	text-align: center;
+	color: $white;
+	font-size: 40px;
+}
+
+#manna_hero_about {
+	@include hero_top;
+	background-image: url(../img/hero_about.png);
+}
+
+#manna_hero_news {
+	@include hero_top;
+	background-image: url(../img/hero_about.png);
+}
+
+#manna_hero_order {
+	@include hero_top;
+	background-image: url(../img/hero_about.png);
+}
+
+#manna_hero_blog {
+	@include hero_top;
+	background-image: url(../img/hero_about.png);
+}
+
+#manna_hero_contact {
+	@include hero_top;
+	background-image: url(../img/hero_about.png);
+}
+
 .manna_btn_seemore_right {
 	float: right;
 	text-decoration: none;

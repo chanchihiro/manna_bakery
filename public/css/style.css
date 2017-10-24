@@ -227,6 +227,51 @@ body {
         #manna_main #manna_block_order #manna_feed_food dl:nth-child(3n) {
           margin-right: 0; }
 
+#manna_hero_about {
+  width: 100%;
+  height: 380px;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  background-image: url(../img/hero_about.png); }
+
+#manna_hero_news {
+  width: 100%;
+  height: 380px;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  background-image: url(../img/hero_about.png); }
+
+#manna_hero_order {
+  width: 100%;
+  height: 380px;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  background-image: url(../img/hero_about.png); }
+
+#manna_hero_blog {
+  width: 100%;
+  height: 380px;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  background-image: url(../img/hero_about.png); }
+
+#manna_hero_contact {
+  width: 100%;
+  height: 380px;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  background-image: url(../img/hero_about.png); }
+
 .manna_btn_seemore_right {
   float: right;
   text-decoration: none;
