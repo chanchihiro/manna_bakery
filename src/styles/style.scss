@@ -226,9 +226,16 @@ body {
 					margin-bottom: 8px;
 				}
 				dd {
-					margin-bottom: 8px;
+					margin-bottom: 4px;
 				}
 			}
+		}
+	}
+	#manna_block_contact {
+		margin-top: 64px;
+		.text_contact {
+			text-align: center;
+			line-height: 24px;
 		}
 	}
 }

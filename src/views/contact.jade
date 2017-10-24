@@ -6,5 +6,20 @@ block body
   include _header
  #manna_hero_contact
   h3.copper CONTACT
+ #manna_main
+  #manna_block_contact
+   p.text_contact
+    | 内容によっては回答を差し上げるのにお時間をいただく場合がございます。
+    br
+    | また、休業日は翌営業日以降の対応となりますのでご了承ください。
+ //
+  form.formrun(action="https://form.run/api/v1/r/g6vtbjhmf5gon0gcs6f056h0" method="post")
+   input(name="お名前" type="text" placeholder="お名前[必須]" data-formrun-required)
+   div(data-formrun-show-if-error="お名前") お名前を入力してください。
+   input(name="メールアドレス" type="text" data-formrun-type="email" placeholder="メールアドレス[必須]" data-formrun-required)
+   div(data-formrun-show-if-error="メールアドレス") メールアドレスを正しく入力してください。
+   textarea(name="お問い合わせ" data-formrun-required placeholder="内容[必須]")
+   div(data-formrun-show-if-error="お問い合わせ") お問い合わせを入力してください。
+   button(type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-error-text="未入力の項目があります") 送信
  include _footer
  include _script
