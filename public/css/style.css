@@ -151,8 +151,10 @@ body {
     #manna_main #manna_header #title_logo {
       width: 260px;
       float: left; }
-      #manna_main #manna_header #title_logo img {
-        width: 100%; }
+      #manna_main #manna_header #title_logo a {
+        display: block; }
+        #manna_main #manna_header #title_logo a img {
+          width: 100%; }
     #manna_main #manna_header #menu_list {
       float: right; }
       #manna_main #manna_header #menu_list ul li {
@@ -234,6 +236,8 @@ body {
 
 footer {
   width: 100%;
-  bottom: 8px; }
+  bottom: 8px;
+  margin-top: 124px;
+  margin-bottom: 12px; }
   footer p {
     text-align: center; }

@@ -23,8 +23,11 @@ body {
 		#title_logo {
 			width: 260px;
 			float: left;
-			img {
-				width: 100%;
+			a {
+				display: block;
+				img {
+					width: 100%;
+				}
 			}
 		}
 		#menu_list {
@@ -50,7 +53,7 @@ body {
 		#manna_text_message {
 			padding-top: 56px;
 			padding-bottom: 36px;
-			background-color: #e6e6e6;
+			background-color: $gray;
 			h2 {
 				padding-bottom: 56px;
 				font-size: 24px;
@@ -139,6 +142,8 @@ body {
 footer {
 	width: 100%;
 	bottom: 8px;
+	margin-top: 124px;
+	margin-bottom: 12px;
 	p {
 		text-align: center;
 	}
