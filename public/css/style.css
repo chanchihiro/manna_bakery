@@ -6,16 +6,6 @@
   padding: 0;
   margin: 0; }
 
-.center {
-  width: 80%;
-  margin: 0 auto; }
-
-.partical {
-  width: 90%;
-  background-color: #000;
-  margin: 10px 0;
-  margin: 0 auto; }
-
 .p-v-005 {
   padding: 0.5rem 0rem; }
 
@@ -100,13 +90,21 @@ body {
     body {
       font-size: 12px; } }
 
+#manna_top_bg_gray {
+  position: absolute;
+  width: 100%;
+  top: 440px;
+  height: 760px;
+  background-color: #e6e6e6;
+  z-index: -10; }
+
 #manna_main {
   width: 980px;
   margin: 0 auto; }
   #manna_main #manna_header {
-    margin-top: 96px;
+    margin-top: 88px;
     overflow: hidden;
-    margin-bottom: 40px; }
+    margin-bottom: 24px; }
     #manna_main #manna_header #title_logo {
       width: 260px;
       float: left; }
@@ -131,8 +129,7 @@ body {
       width: 100%; }
     #manna_main #manna_message #manna_text_message {
       padding-top: 56px;
-      padding-bottom: 36px;
-      background-color: #e6e6e6; }
+      padding-bottom: 36px; }
       #manna_main #manna_message #manna_text_message h2 {
         padding-bottom: 56px;
         font-size: 24px; }
@@ -170,16 +167,39 @@ body {
     overflow: hidden; }
     #manna_main #manna_block_blog #manna_feed_blog {
       overflow: hidden; }
+      #manna_main #manna_block_blog #manna_feed_blog .blog_first dt {
+        margin-bottom: 20px; }
       #manna_main #manna_block_blog #manna_feed_blog dl {
         width: 440px;
         float: left; }
+        #manna_main #manna_block_blog #manna_feed_blog dl dd {
+          margin-bottom: 12px; }
+        #manna_main #manna_block_blog #manna_feed_blog dl .title_blog {
+          font-size: 18px;
+          font-weight: bold; }
+        #manna_main #manna_block_blog #manna_feed_blog dl .title_blog_sub {
+          font-weight: bold; }
+      #manna_main #manna_block_blog #manna_feed_blog .blog_first {
+        padding-right: 49px;
+        border-right: 1px #AFAFAF solid; }
       #manna_main #manna_block_blog #manna_feed_blog .blog_sub {
-        float: right; }
+        float: left;
+        padding-left: 50px;
+        margin-top: 14px; }
+        #manna_main #manna_block_blog #manna_feed_blog .blog_sub:nth-child(2) {
+          margin-top: 0px; }
         #manna_main #manna_block_blog #manna_feed_blog .blog_sub dt {
           float: left;
           width: 182px;
           margin-right: 18px;
-          margin-bottom: 30px; }
+          margin-bottom: 14px; }
+      #manna_main #manna_block_blog #manna_feed_blog hr {
+        width: 440px;
+        float: right;
+        background-color: #AFAFAF;
+        box-shadow: none;
+        border: none;
+        height: 1px; }
   #manna_main #manna_block_order {
     overflow: hidden; }
     #manna_main #manna_block_order #manna_feed_food {

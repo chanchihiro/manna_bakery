@@ -13,13 +13,22 @@ body {
 	}
 }
 
+#manna_top_bg_gray {
+	position: absolute;
+	width: 100%;
+	top: 440px;
+	height: 760px;
+	background-color: $gray;
+	z-index: -10;
+}
+
 #manna_main {
 	width: 980px;
 	margin: 0 auto;
 	#manna_header {
-		margin-top: 96px;
+		margin-top: 88px;
 		overflow: hidden;
-		margin-bottom: 40px;
+		margin-bottom: 24px;
 		#title_logo {
 			width: 260px;
 			float: left;
@@ -55,7 +64,6 @@ body {
 		#manna_text_message {
 			padding-top: 56px;
 			padding-bottom: 36px;
-			background-color: $gray;
 			h2 {
 				padding-bottom: 56px;
 				font-size: 24px;
@@ -105,18 +113,50 @@ body {
 		overflow: hidden;
 		#manna_feed_blog {
 			overflow: hidden;
+			.blog_first {
+				dt {
+					margin-bottom: 20px;
+				}
+			}
 			dl {
 				width: 440px;
 				float: left;
+				dd {
+					margin-bottom: 12px;
+				}
+				.title_blog {
+					font-size: 18px;
+					font-weight: bold;
+				}
+				.title_blog_sub {
+					font-weight: bold;
+				}
+			}
+			.blog_first {
+				padding-right: 49px;
+				border-right: 1px #AFAFAF solid;
 			}
 			.blog_sub {
-				float: right;
+				float: left;
+				padding-left: 50px;
+				margin-top: 14px;
+				&:nth-child(2) {
+					margin-top: 0px;
+				}
 				dt {
 					float: left;
 					width: 182px;
 					margin-right: 18px;
-					margin-bottom: 30px;
+					margin-bottom: 14px;
 				}
+			}
+			hr {
+				width: 440px;
+				float: right;
+				background-color: #AFAFAF;
+				box-shadow: none;
+				border: none;
+				height: 1px;
 			}
 		}
 	}
