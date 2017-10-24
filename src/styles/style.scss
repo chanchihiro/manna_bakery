@@ -75,8 +75,8 @@ body {
 			a {
 				text-decoration: none;
 				color: $white;
-				padding: 7px 22px;
-				background-color: #F2C0BD;
+				padding: 10px 22px;
+				background-color: $pink;
 				font-family: copper;
 			}
 		}
@@ -91,11 +91,12 @@ body {
 	}
 	#manna_block_news {
 		overflow: hidden;
+		margin-top: 108px;
 		#manna_feed_news {
 			margin-bottom: 8px;
 			dl {
 				overflow: hidden;
-				margin-bottom: 16px;
+				margin-bottom: 12px;
 				dt {
 					float: left;
 					clear: left;
@@ -168,7 +169,7 @@ body {
 			.blog_sub {
 				float: left;
 				padding-left: 50px;
-				margin-top: 14px;
+				margin-top: 18px;
 				&:nth-child(2) {
 					margin-top: 0px;
 				}
@@ -278,9 +279,10 @@ body {
 	float: right;
 	text-decoration: none;
 	color: $white;
-	padding: 7px 22px;
-	background-color: #F2C0BD;
+	padding: 10px 22px;
+	background-color: $pink;
 	font-family: copper;
+	font-size: 14px;
 }
 
 .copper {
@@ -294,6 +296,27 @@ footer {
 	margin-bottom: 12px;
 	p {
 		text-align: center;
+	}
+	#manna_sns {
+		width: 120px;
+		margin: 12px auto 20px;
+		overflow: hidden;
+		a {
+			display: block;
+			float: left;
+			margin: 0px 5px 5px 0px;
+			padding: 0px;
+			color: $white;
+			i {
+				width: 30px;
+				height: 30px;
+				margin: 0px 2px;
+				border-radius: 50%;
+				line-height: 30px;
+				text-align: center;
+				background-color: $pink;
+			}
+		}
 	}
 }
 
