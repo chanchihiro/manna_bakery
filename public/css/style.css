@@ -163,6 +163,10 @@ body {
         #manna_main #manna_block_news #manna_feed_news dl dd {
           float: left;
           margin-right: 52px; }
+  #manna_main #manna_block_news_2 {
+    overflow: hidden; }
+    #manna_main #manna_block_news_2 #manna_feed_news_2 {
+      overflow: hidden; }
   #manna_main #manna_block_blog {
     overflow: hidden; }
     #manna_main #manna_block_blog #manna_feed_blog {
@@ -200,6 +204,21 @@ body {
         box-shadow: none;
         border: none;
         height: 1px; }
+  #manna_main #manna_block_blog_2 {
+    overflow: hidden; }
+    #manna_main #manna_block_blog_2 #manna_feed_blog_2 {
+      overflow: hidden; }
+      #manna_main #manna_block_blog_2 #manna_feed_blog_2 dl {
+        width: 228px;
+        float: left;
+        margin-right: 22px;
+        margin-bottom: 36px; }
+        #manna_main #manna_block_blog_2 #manna_feed_blog_2 dl:nth-child(4n) {
+          margin-right: 0; }
+        #manna_main #manna_block_blog_2 #manna_feed_blog_2 dl dt {
+          margin-bottom: 8px; }
+        #manna_main #manna_block_blog_2 #manna_feed_blog_2 dl dd {
+          margin-bottom: 4px; }
   #manna_main #manna_block_order {
     overflow: hidden; }
     #manna_main #manna_block_order #manna_feed_food {
@@ -207,9 +226,14 @@ body {
       #manna_main #manna_block_order #manna_feed_food dl {
         width: 300px;
         float: left;
-        margin-right: 40px; }
+        margin-right: 40px;
+        margin-bottom: 38px; }
         #manna_main #manna_block_order #manna_feed_food dl:nth-child(3n) {
           margin-right: 0; }
+        #manna_main #manna_block_order #manna_feed_food dl dt {
+          margin-bottom: 16px; }
+        #manna_main #manna_block_order #manna_feed_food dl dd {
+          margin-bottom: 8px; }
 
 #manna_hero_about {
   width: 100%;

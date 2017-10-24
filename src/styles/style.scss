@@ -109,6 +109,12 @@ body {
 			}
 		}
 	}
+	#manna_block_news_2 {
+		overflow: hidden;
+		#manna_feed_news_2 {
+			overflow: hidden;
+		}
+	}
 	#manna_block_blog {
 		overflow: hidden;
 		#manna_feed_blog {
@@ -160,6 +166,27 @@ body {
 			}
 		}
 	}
+	#manna_block_blog_2 {
+		overflow: hidden;
+		#manna_feed_blog_2 {
+			overflow: hidden;
+			dl {
+				width: 228px;
+				float: left;
+				margin-right: 22px;
+				margin-bottom: 36px;
+				&:nth-child(4n) {
+					margin-right: 0;
+				}
+				dt {
+					margin-bottom: 8px;
+				}
+				dd {
+					margin-bottom: 4px;
+				}
+			}
+		}
+	}
 	#manna_block_order {
 		overflow: hidden;
 		#manna_feed_food {
@@ -168,8 +195,15 @@ body {
 				width: 300px;
 				float: left;
 				margin-right: 40px;
+				margin-bottom: 38px;
 				&:nth-child(3n) {
 					margin-right: 0;
+				}
+				dt {
+					margin-bottom: 16px;
+				}
+				dd {
+					margin-bottom: 8px;
 				}
 			}
 		}
