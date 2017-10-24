@@ -258,6 +258,26 @@ body {
     #manna_main #manna_block_contact .text_contact {
       text-align: center;
       line-height: 24px; }
+  #manna_main #manna_block_about {
+    margin-top: 64px; }
+    #manna_main #manna_block_about h3 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px; }
+    #manna_main #manna_block_about #manna_description {
+      width: 632px;
+      margin: 0px auto; }
+      #manna_main #manna_block_about #manna_description .desc_left {
+        float: left;
+        font-size: 12px;
+        margin-right: 72px;
+        line-height: 23px; }
+      #manna_main #manna_block_about #manna_description .desc_right {
+        float: left;
+        font-size: 12px;
+        line-height: 21px; }
+  #manna_main .clear {
+    clear: both; }
 
 #manna_hero_about {
   width: 100%;
@@ -324,8 +344,8 @@ footer {
   footer p {
     text-align: center; }
   footer #manna_sns {
-    width: 120px;
-    margin: 12px auto 20px;
+    width: 118px;
+    margin: 8px auto 20px;
     overflow: hidden; }
     footer #manna_sns a {
       display: block;
