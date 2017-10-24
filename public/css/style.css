@@ -186,12 +186,6 @@ body {
     #manna_main .manna_block .title_heading {
       margin-bottom: 20px;
       font-size: 24px; }
-    #manna_main .manna_block #manna_btn_seemore_right {
-      float: right;
-      text-decoration: none;
-      color: #fff;
-      padding: 7px 22px;
-      background-color: #F2C0BD; }
   #manna_main #manna_block_news {
     overflow: hidden; }
     #manna_main #manna_block_news #manna_feed_news {
@@ -206,6 +200,37 @@ body {
         #manna_main #manna_block_news #manna_feed_news dl dd {
           float: left;
           margin-right: 52px; }
+  #manna_main #manna_block_blog {
+    overflow: hidden; }
+    #manna_main #manna_block_blog #manna_feed_blog {
+      overflow: hidden; }
+      #manna_main #manna_block_blog #manna_feed_blog dl {
+        width: 440px;
+        float: left; }
+      #manna_main #manna_block_blog #manna_feed_blog .blog_sub {
+        float: right; }
+        #manna_main #manna_block_blog #manna_feed_blog .blog_sub dt {
+          float: left;
+          width: 182px;
+          margin-right: 18px;
+          margin-bottom: 30px; }
+  #manna_main #manna_block_order {
+    overflow: hidden; }
+    #manna_main #manna_block_order #manna_feed_food {
+      overflow: hidden; }
+      #manna_main #manna_block_order #manna_feed_food dl {
+        width: 300px;
+        float: left;
+        margin-right: 40px; }
+        #manna_main #manna_block_order #manna_feed_food dl:nth-child(3n) {
+          margin-right: 0; }
+
+.manna_btn_seemore_right {
+  float: right;
+  text-decoration: none;
+  color: #fff;
+  padding: 7px 22px;
+  background-color: #F2C0BD; }
 
 footer {
   width: 100%;
