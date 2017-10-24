@@ -1,47 +1,6 @@
 @font-face {
-  font-family: mc-l;
-  src: url(../font/mplus-1m-light.ttf) format("opentype"); }
-
-@font-face {
-  font-family: mc-b;
-  src: url(../font/mplus-1m-bold.ttf) format("opentype"); }
-
-@font-face {
-  font-family: mc-r;
-  src: url(../font/mplus-1m-regular.ttf) format("opentype"); }
-
-@font-face {
-  font-family: mc-t;
-  src: url(../font/mplus-1m-thin) format("opentype"); }
-
-@font-face {
-  font-family: mc-m;
-  src: url(../font/mplus-1m-medium.ttf) format("opentype"); }
-
-@font-face {
-  font-family: "Yu Gothic";
-  src: local("Yu Gothic Medium");
-  font-weight: 100; }
-
-@font-face {
-  font-family: "Yu Gothic";
-  src: local("Yu Gothic Medium");
-  font-weight: 200; }
-
-@font-face {
-  font-family: "Yu Gothic";
-  src: local("Yu Gothic Medium");
-  font-weight: 300; }
-
-@font-face {
-  font-family: "Yu Gothic";
-  src: local("Yu Gothic Medium");
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Yu Gothic";
-  src: local("Yu Gothic Bold");
-  font-weight: bold; }
+  font-family: copper;
+  src: url(../font/Copperplate.ttc) format("opentype"); }
 
 * {
   padding: 0;
@@ -156,7 +115,9 @@ body {
         #manna_main #manna_header #title_logo a img {
           width: 100%; }
     #manna_main #manna_header #menu_list {
-      float: right; }
+      float: right;
+      font-family: copper;
+      font-size: 18px; }
       #manna_main #manna_header #menu_list ul li {
         float: left;
         list-style-type: none; }
@@ -182,12 +143,14 @@ body {
         text-decoration: none;
         color: #fff;
         padding: 7px 22px;
-        background-color: #F2C0BD; }
+        background-color: #F2C0BD;
+        font-family: copper; }
   #manna_main .manna_block {
     margin-top: 64px; }
     #manna_main .manna_block .title_heading {
       margin-bottom: 20px;
-      font-size: 24px; }
+      font-size: 30px;
+      font-family: copper; }
   #manna_main #manna_block_news {
     overflow: hidden; }
     #manna_main #manna_block_news #manna_feed_news {
@@ -198,7 +161,8 @@ body {
         #manna_main #manna_block_news #manna_feed_news dl dt {
           float: left;
           clear: left;
-          margin-right: 52px; }
+          margin-right: 52px;
+          font-family: copper; }
         #manna_main #manna_block_news #manna_feed_news dl dd {
           float: left;
           margin-right: 52px; }
@@ -277,7 +241,11 @@ body {
   text-decoration: none;
   color: #fff;
   padding: 7px 22px;
-  background-color: #F2C0BD; }
+  background-color: #F2C0BD;
+  font-family: copper; }
+
+.copper {
+  font-family: copper; }
 
 footer {
   width: 100%;

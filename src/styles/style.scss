@@ -32,6 +32,8 @@ body {
 		}
 		#menu_list {
 			float: right;
+			font-family: copper;
+			font-size: 18px;
 			ul {
 				li {
 					float: left;
@@ -67,6 +69,7 @@ body {
 				color: $white;
 				padding: 7px 22px;
 				background-color: #F2C0BD;
+				font-family: copper;
 			}
 		}
 	}
@@ -74,7 +77,8 @@ body {
 		margin-top: 64px;
 		.title_heading {
 			margin-bottom: 20px;
-			font-size: 24px;
+			font-size: 30px;
+			font-family: copper;
 		}
 	}
 	#manna_block_news {
@@ -88,6 +92,7 @@ body {
 					float: left;
 					clear: left;
 					margin-right: 52px;
+					font-family: copper;
 				}
 				dd {
 					float: left;
@@ -171,6 +176,11 @@ body {
 	color: $white;
 	padding: 7px 22px;
 	background-color: #F2C0BD;
+	font-family: copper;
+}
+
+.copper {
+	font-family: copper;
 }
 
 footer {
