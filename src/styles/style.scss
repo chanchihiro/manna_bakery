@@ -337,6 +337,7 @@ body {
 	text-align: center;
 	color: $white;
 	font-size: 48px;
+	background-size: cover;
 	h3 {
 		padding-top: 160px;
 		text-shadow: 3px 3px 9px #000;
@@ -345,27 +346,30 @@ body {
 
 #manna_hero_about {
 	@include hero_top;
-	background-image: url(../img/hero_about.png);
+	background-image: url(../img/hero2.jpg);
+	background-position: 0 -290px;
 }
 
 #manna_hero_news {
 	@include hero_top;
-	background-image: url(../img/hero_about.png);
+	background-image: url(../img/hero4.jpg);
+	background-position: 0 -230px;
 }
 
 #manna_hero_order {
 	@include hero_top;
-	background-image: url(../img/hero_about.png);
+	background-image: url(../img/hero3.jpg);
 }
 
 #manna_hero_blog {
 	@include hero_top;
-	background-image: url(../img/hero_about.png);
+	background-image: url(../img/hero1.jpg);
+	background-position: 0 -320px;
 }
 
 #manna_hero_contact {
 	@include hero_top;
-	background-image: url(../img/hero_about.png);
+	background-image: url(../img/hero5.jpg);
 }
 
 .manna_btn_seemore_right {

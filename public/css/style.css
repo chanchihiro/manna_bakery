@@ -338,7 +338,9 @@ body {
   text-align: center;
   color: #fff;
   font-size: 48px;
-  background-image: url(../img/hero_about.png); }
+  background-size: cover;
+  background-image: url(../img/hero2.jpg);
+  background-position: 0 -290px; }
   #manna_hero_about h3 {
     padding-top: 160px;
     text-shadow: 3px 3px 9px #000; }
@@ -350,7 +352,9 @@ body {
   text-align: center;
   color: #fff;
   font-size: 48px;
-  background-image: url(../img/hero_about.png); }
+  background-size: cover;
+  background-image: url(../img/hero4.jpg);
+  background-position: 0 -230px; }
   #manna_hero_news h3 {
     padding-top: 160px;
     text-shadow: 3px 3px 9px #000; }
@@ -362,7 +366,8 @@ body {
   text-align: center;
   color: #fff;
   font-size: 48px;
-  background-image: url(../img/hero_about.png); }
+  background-size: cover;
+  background-image: url(../img/hero3.jpg); }
   #manna_hero_order h3 {
     padding-top: 160px;
     text-shadow: 3px 3px 9px #000; }
@@ -374,7 +379,9 @@ body {
   text-align: center;
   color: #fff;
   font-size: 48px;
-  background-image: url(../img/hero_about.png); }
+  background-size: cover;
+  background-image: url(../img/hero1.jpg);
+  background-position: 0 -320px; }
   #manna_hero_blog h3 {
     padding-top: 160px;
     text-shadow: 3px 3px 9px #000; }
@@ -386,7 +393,8 @@ body {
   text-align: center;
   color: #fff;
   font-size: 48px;
-  background-image: url(../img/hero_about.png); }
+  background-size: cover;
+  background-image: url(../img/hero5.jpg); }
   #manna_hero_contact h3 {
     padding-top: 160px;
     text-shadow: 3px 3px 9px #000; }
