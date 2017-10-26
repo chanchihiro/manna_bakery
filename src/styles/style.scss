@@ -218,6 +218,10 @@ body {
 	}
 	#manna_block_order {
 		overflow: hidden;
+		.text_order {
+			text-align: center;
+			margin-bottom: 64px;
+		}
 		#manna_feed_food {
 			overflow: hidden;
 			dt {
@@ -267,6 +271,21 @@ body {
 				}
 				.order_6 {
 					background-image: url(../img/top_order_above6.jpg);
+					background-size: cover;
+					background-position: 0 -13px;
+				}
+				.order_7 {
+					background-image: url(../img/top_order_above7.jpg);
+					background-size: cover;
+					background-position: 0 -8px;
+				}
+				.order_8 {
+					background-image: url(../img/top_order_above8.jpg);
+					background-size: cover;
+					background-position: 0 -13px;
+				}
+				.order_9 {
+					background-image: url(../img/top_order_above9.jpg);
 					background-size: cover;
 					background-position: 0 -13px;
 				}
