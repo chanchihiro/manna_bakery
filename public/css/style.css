@@ -240,7 +240,10 @@ body {
         #manna_main #manna_block_blog_2 #manna_feed_blog_2 dl:nth-child(4n) {
           margin-right: 0; }
         #manna_main #manna_block_blog_2 #manna_feed_blog_2 dl dt {
-          margin-bottom: 8px; }
+          margin-bottom: 8px;
+          width: 228px;
+          height: 161px;
+          background-color: #e6e6e6; }
         #manna_main #manna_block_blog_2 #manna_feed_blog_2 dl dd {
           margin-bottom: 4px; }
   #manna_main #manna_block_order {
