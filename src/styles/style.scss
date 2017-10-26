@@ -336,7 +336,11 @@ body {
 	background-size: cover;
 	text-align: center;
 	color: $white;
-	font-size: 40px;
+	font-size: 48px;
+	h3 {
+		padding-top: 160px;
+		text-shadow: 3px 3px 9px #000;
+ 	}
 }
 
 #manna_hero_about {
