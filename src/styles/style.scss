@@ -330,6 +330,42 @@ body {
 	}
 }
 
+#manna_bg_slant {
+	width: 100%;
+	#about_info {
+		width: 640px;
+		margin: 120px auto 0px;
+		overflow: hidden;
+		h4 {
+			text-align: center;
+			font-weight: normal;
+			margin-bottom: 40px;
+			font-size: 16px;
+		}
+		#about_info_right {
+			h5 {
+				font-weight: normal;
+				margin-bottom: 8px;
+			}
+			p {
+				line-height: 23px;
+			}
+			float: left;
+			margin-right: 80px;
+		}
+		#about_info_left {
+			h5 {
+				font-weight: normal;
+				margin-bottom: 8px;
+			}
+			p {
+				line-height: 23px;
+			}
+			float: left;
+		}
+	}
+}
+
 @mixin hero_top {
 	width: 100%;
 	height: 380px;
