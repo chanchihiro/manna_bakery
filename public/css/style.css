@@ -191,7 +191,10 @@ body {
     #manna_main #manna_block_blog #manna_feed_blog {
       overflow: hidden; }
       #manna_main #manna_block_blog #manna_feed_blog .blog_first dt {
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        background-color: #e6e6e6;
+        width: 440px;
+        height: 330px; }
       #manna_main #manna_block_blog #manna_feed_blog dl {
         width: 440px;
         float: left; }
@@ -214,6 +217,8 @@ body {
         #manna_main #manna_block_blog #manna_feed_blog .blog_sub dt {
           float: left;
           width: 182px;
+          height: 130px;
+          background-color: #e6e6e6;
           margin-right: 18px;
           margin-bottom: 14px; }
       #manna_main #manna_block_blog #manna_feed_blog hr {
@@ -242,6 +247,11 @@ body {
     overflow: hidden; }
     #manna_main #manna_block_order #manna_feed_food {
       overflow: hidden; }
+      #manna_main #manna_block_order #manna_feed_food dt {
+        width: 300px;
+        height: 180px;
+        background-color: #e6e6e6;
+        background-image: url(); }
       #manna_main #manna_block_order #manna_feed_food dl {
         width: 300px;
         float: left;
@@ -253,6 +263,30 @@ body {
           margin-bottom: 8px; }
         #manna_main #manna_block_order #manna_feed_food dl dd {
           margin-bottom: 4px; }
+        #manna_main #manna_block_order #manna_feed_food dl .order_1 {
+          background-image: url(../img/top_order_above1.jpg);
+          background-size: cover;
+          background-position: 0 -13px; }
+        #manna_main #manna_block_order #manna_feed_food dl .order_2 {
+          background-image: url(../img/top_order_above2.jpg);
+          background-size: cover;
+          background-position: 0 -13px; }
+        #manna_main #manna_block_order #manna_feed_food dl .order_3 {
+          background-image: url(../img/top_order_above3.jpg);
+          background-size: cover;
+          background-position: 0 -13px; }
+        #manna_main #manna_block_order #manna_feed_food dl .order_4 {
+          background-image: url(../img/top_order_above4.jpg);
+          background-size: cover;
+          background-position: 0 -8px; }
+        #manna_main #manna_block_order #manna_feed_food dl .order_5 {
+          background-image: url(../img/top_order_above5.jpg);
+          background-size: cover;
+          background-position: 0 -13px; }
+        #manna_main #manna_block_order #manna_feed_food dl .order_6 {
+          background-image: url(../img/top_order_above6.jpg);
+          background-size: cover;
+          background-position: 0 -13px; }
   #manna_main #manna_block_contact {
     margin-top: 64px; }
     #manna_main #manna_block_contact .text_contact {

@@ -146,6 +146,9 @@ body {
 			.blog_first {
 				dt {
 					margin-bottom: 20px;
+					background-color: $gray;
+					width: 440px;
+					height: 330px;
 				}
 			}
 			dl {
@@ -176,6 +179,8 @@ body {
 				dt {
 					float: left;
 					width: 182px;
+					height: 130px;
+					background-color: $gray;
 					margin-right: 18px;
 					margin-bottom: 14px;
 				}
@@ -215,6 +220,12 @@ body {
 		overflow: hidden;
 		#manna_feed_food {
 			overflow: hidden;
+			dt {
+				width: 300px;
+				height: 180px;
+				background-color: $gray;
+				background-image: url();
+			}
 			dl {
 				width: 300px;
 				float: left;
@@ -228,6 +239,36 @@ body {
 				}
 				dd {
 					margin-bottom: 4px;
+				}
+				.order_1 {
+					background-image: url(../img/top_order_above1.jpg);
+					background-size: cover;
+					background-position: 0 -13px;
+				}
+				.order_2 {
+					background-image: url(../img/top_order_above2.jpg);
+					background-size: cover;
+					background-position: 0 -13px;
+				}
+				.order_3 {
+					background-image: url(../img/top_order_above3.jpg);
+					background-size: cover;
+					background-position: 0 -13px;
+				}
+				.order_4 {
+					background-image: url(../img/top_order_above4.jpg);
+					background-size: cover;
+					background-position: 0 -8px;
+				}
+				.order_5 {
+					background-image: url(../img/top_order_above5.jpg);
+					background-size: cover;
+					background-position: 0 -13px;
+				}
+				.order_6 {
+					background-image: url(../img/top_order_above6.jpg);
+					background-size: cover;
+					background-position: 0 -13px;
 				}
 			}
 		}
