@@ -357,6 +357,10 @@ body {
         margin-bottom: 8px; }
       #manna_bg_slant #about_info #about_info_left p {
         line-height: 23px; }
+  #manna_bg_slant #gmap_ct {
+    margin-top: 60px;
+    width: 100%;
+    height: 300px; }
 
 #manna_hero_about {
   width: 100%;

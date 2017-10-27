@@ -1,6 +1,17 @@
 extends _head
 block title
  title= "manna bakery | about"
+ block scripts
+  script(type='text/javascript').
+   function initialize() {
+     var latlng = new google.maps.LatLng(35.166875,136.880485);/*表示したい場所の経度、緯度*/
+     var myOptions = {
+       zoom: 18, /*拡大比率*/
+       center: latlng, /*表示枠内の中心点*/
+       mapTypeId: google.maps.MapTypeId.ROADMAP/*表示タイプの指定*/
+     };
+     var map = new google.maps.Map(document.getElementById('gmap_ct'), myOptions);
+   }
 block body
  #manna_main
   include _header
@@ -105,5 +116,6 @@ block body
       | 地下鉄：四条駅下車　2番出口より徒歩約3分
       br
       | ※駐車場はございません。ご了承ください。
+   #gmap_ct
  include _footer
  include _script

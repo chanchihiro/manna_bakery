@@ -13,8 +13,30 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/favicon.png">
     <title>manna bakery | about</title>
+    <script type="text/javascript">
+      function initialize() {
+        var latlng = new google.maps.LatLng(35.166875,136.880485);/*表示したい場所の経度、緯度*/
+        var myOptions = {
+          zoom: 18, /*拡大比率*/
+          center: latlng, /*表示枠内の中心点*/
+          mapTypeId: google.maps.MapTypeId.ROADMAP/*表示タイプの指定*/
+        };
+        var map = new google.maps.Map(document.getElementById('gmap_ct'), myOptions);
+      }
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var latlng = new google.maps.LatLng(35.166875,136.880485);/*表示したい場所の経度、緯度*/
+        var myOptions = {
+          zoom: 18, /*拡大比率*/
+          center: latlng, /*表示枠内の中心点*/
+          mapTypeId: google.maps.MapTypeId.ROADMAP/*表示タイプの指定*/
+        };
+        var map = new google.maps.Map(document.getElementById('gmap_ct'), myOptions);
+      }
+    </script>
   </head>
-  <body>
+  <body onload="initialize();">
     <div id="manna_main">
       <header id="manna_header">
         <div id="title_logo"><a href="index.html"><img src="img/logo.png"></a></div>
@@ -76,6 +98,7 @@
             <p>〒600-8421 京都市下京区綾小路通烏丸西入童侍者町160番地 <br>地下鉄：四条駅下車　2番出口より徒歩約3分<br>※駐車場はございません。ご了承ください。</p>
           </div>
         </div>
+        <div id="gmap_ct"></div>
       </div>
     </div>
     <footer>
@@ -85,5 +108,6 @@
     </footer>
     <script src="https://sdk.form.run/js/v2/formrun.js"></script>
     <script src="js/bundle.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATwFstqlwJ9sa_ODgkj9pIXE-qAKTgoLM&amp;#038;callback=initMap"></script>
   </body>
 </html>
