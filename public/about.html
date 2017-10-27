@@ -15,22 +15,52 @@
     <title>manna bakery | about</title>
     <script type="text/javascript">
       function initialize() {
-        var latlng = new google.maps.LatLng(35.166875,136.880485);/*表示したい場所の経度、緯度*/
+       var latlng = new google.maps.LatLng(35.166875,136.880485);/*表示したい場所の経度、緯度*/
+       var styles = [
+        {
+         stylers: [
+           { hue: "#eeeeee" },
+           // { color: "#eee" },
+           { lightness: 0 },
+           { saturation: -100 },
+           { gamma: 0.6 },
+           { invert_lightness: false},
+           { visibility: "simplified"}
+         ]
+        }
+       ];
         var myOptions = {
           zoom: 18, /*拡大比率*/
           center: latlng, /*表示枠内の中心点*/
-          mapTypeId: google.maps.MapTypeId.ROADMAP/*表示タイプの指定*/
+          mapTypeId: google.maps.MapTypeId.ROADMAP,/*表示タイプの指定*/
+          styles: styles,
+          draggable: true
         };
         var map = new google.maps.Map(document.getElementById('gmap_ct'), myOptions);
       }
     </script>
     <script type="text/javascript">
       function initialize() {
-        var latlng = new google.maps.LatLng(35.166875,136.880485);/*表示したい場所の経度、緯度*/
+       var latlng = new google.maps.LatLng(35.166875,136.880485);/*表示したい場所の経度、緯度*/
+       var styles = [
+        {
+         stylers: [
+           { hue: "#eeeeee" },
+           // { color: "#eee" },
+           { lightness: 0 },
+           { saturation: -100 },
+           { gamma: 0.6 },
+           { invert_lightness: false},
+           { visibility: "simplified"}
+         ]
+        }
+       ];
         var myOptions = {
           zoom: 18, /*拡大比率*/
           center: latlng, /*表示枠内の中心点*/
-          mapTypeId: google.maps.MapTypeId.ROADMAP/*表示タイプの指定*/
+          mapTypeId: google.maps.MapTypeId.ROADMAP,/*表示タイプの指定*/
+          styles: styles,
+          draggable: true
         };
         var map = new google.maps.Map(document.getElementById('gmap_ct'), myOptions);
       }
