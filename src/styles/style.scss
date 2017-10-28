@@ -334,12 +334,12 @@ body {
 	position: relative;
 	width: 100%;
 	overflow: hidden;
-	padding-top: 200px;
+	padding-top: 160px;
 	#manna_slant {
 		background-color: $pink;
 		width: 140%;
 		height: 760px;
-		top: 220px;
+		top: 280px;
 		left: -300px;
 		position: absolute;
 		-webkit-transform: rotate(-12deg);
@@ -355,9 +355,19 @@ body {
 			float: right;
 			width: 520px;
 			box-sizing: border-box;
-			margin-bottom: 180px;
+			margin-bottom: 240px;
+			position: relative;
+			padding-top: 100px;
+			#manna_right_image {
+				position: absolute;
+				width: 570px;
+				height: 360px;
+				z-index: -5;
+				right: 400px;
+				top: 50px;
+			}
 			.title_about_sub {
-				font-size: 54px;
+				font-size: 60px;
 				margin-bottom: 20px;
 				line-height: 40px;
 				color: $white;
@@ -377,8 +387,17 @@ body {
 			float: left;
 			width: 520px;
 			box-sizing: border-box;
+			position: relative;
+			#manna_left_image {
+				position: absolute;
+				width: 570px;
+				height: 360px;
+				z-index: -5;
+				left: 400px;
+				top: -60px;
+			}
 			.title_about_sub {
-				font-size: 54px;
+				font-size: 60px;
 				margin-bottom: 20px;
 				line-height: 40px;
 				color: $white;

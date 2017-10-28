@@ -335,12 +335,12 @@ body {
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding-top: 200px; }
+  padding-top: 160px; }
   #manna_bg_slant #manna_slant {
     background-color: #F2C0BD;
     width: 140%;
     height: 760px;
-    top: 220px;
+    top: 280px;
     left: -300px;
     position: absolute;
     -webkit-transform: rotate(-12deg);
@@ -352,9 +352,18 @@ body {
       float: right;
       width: 520px;
       box-sizing: border-box;
-      margin-bottom: 180px; }
+      margin-bottom: 240px;
+      position: relative;
+      padding-top: 100px; }
+      #manna_bg_slant #manna_main #manna_about_right #manna_right_image {
+        position: absolute;
+        width: 570px;
+        height: 360px;
+        z-index: -5;
+        right: 400px;
+        top: 50px; }
       #manna_bg_slant #manna_main #manna_about_right .title_about_sub {
-        font-size: 54px;
+        font-size: 60px;
         margin-bottom: 20px;
         line-height: 40px;
         color: #fff;
@@ -369,9 +378,17 @@ body {
     #manna_bg_slant #manna_main #manna_about_left {
       float: left;
       width: 520px;
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      position: relative; }
+      #manna_bg_slant #manna_main #manna_about_left #manna_left_image {
+        position: absolute;
+        width: 570px;
+        height: 360px;
+        z-index: -5;
+        left: 400px;
+        top: -60px; }
       #manna_bg_slant #manna_main #manna_about_left .title_about_sub {
-        font-size: 54px;
+        font-size: 60px;
         margin-bottom: 20px;
         line-height: 40px;
         color: #fff;
