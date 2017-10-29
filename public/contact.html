@@ -36,24 +36,23 @@
     <div id="manna_main">
       <div id="manna_block_contact">
         <p class="text_contact">内容によっては回答を差し上げるのにお時間をいただく場合がございます。<br>また、休業日は翌営業日以降の対応となりますのでご了承ください。</p>
-      </div>
 
 	    <!-- formを書きます -->
 		<form class="formrun manna_form" action="https://form.run/api/v1/r/g6vtbjhmf5gon0gcs6f056h0" method="post">
 		  <div>
 		    <label>お名前</label>
-		    <input name="お名前" type="text">
+		    <input name="お名前" type="text" placeholder="例 : 山田 太郎">
 		  </div>
 
 		  <div>
 		    <label>メールアドレス [必須]</label>
-		    <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required>
+		    <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required placeholder="例 : ◯◯◯@◯.com">
 		    <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
 		  </div>
 
 		  <div>
 		    <label>お問い合わせ [必須]</label>
-		    <textarea name="お問い合わせ" data-formrun-required></textarea>
+		    <textarea name="お問い合わせ" data-formrun-required placeholder="例 : パーティーを開くため、パンを一度に30個ほど同時に注文したいのですが可能でしょうか？"></textarea>
 		    <div data-formrun-show-if-error="お問い合わせ">お問い合わせ入力してください</div>
 		  </div>
 
@@ -61,6 +60,7 @@
 		</form>
 		<!-- form書きの終わり -->
 
+      </div><!-- blockの書きの終わり -->
     </div> <!-- manna_mainの終わり -->
 
 
