@@ -37,17 +37,39 @@
       <div id="manna_block_contact">
         <p class="text_contact">内容によっては回答を差し上げるのにお時間をいただく場合がございます。<br>また、休業日は翌営業日以降の対応となりますのでご了承ください。</p>
       </div>
-    </div>
-    <!--
-    form.formrun(action="https://form.run/api/v1/r/g6vtbjhmf5gon0gcs6f056h0" method="post")
-     input(name="お名前" type="text" placeholder="お名前[必須]" data-formrun-required)
-     div(data-formrun-show-if-error="お名前") お名前を入力してください。
-     input(name="メールアドレス" type="text" data-formrun-type="email" placeholder="メールアドレス[必須]" data-formrun-required)
-     div(data-formrun-show-if-error="メールアドレス") メールアドレスを正しく入力してください。
-     textarea(name="お問い合わせ" data-formrun-required placeholder="内容[必須]")
-     div(data-formrun-show-if-error="お問い合わせ") お問い合わせを入力してください。
-     button(type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-error-text="未入力の項目があります") 送信
-    -->
+
+	    <!-- formを書きます -->
+		<form class="formrun manna_form" action="https://form.run/api/v1/r/g6vtbjhmf5gon0gcs6f056h0" method="post">
+		  <div>
+		    <label>お名前</label>
+		    <input name="お名前" type="text">
+		  </div>
+
+		  <div>
+		    <label>メールアドレス [必須]</label>
+		    <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required>
+		    <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+		  </div>
+
+		  <div>
+		    <label>お問い合わせ [必須]</label>
+		    <textarea name="お問い合わせ" data-formrun-required></textarea>
+		    <div data-formrun-show-if-error="お問い合わせ">お問い合わせ入力してください</div>
+		  </div>
+
+		  <div>
+		    <label>個人情報利用同意 [必須]</label>
+		    <input type="checkbox" name="個人情報利用同意" data-formrun-required>
+		    <div data-formrun-show-if-error="個人情報利用同意">同意してください</div>
+		  </div>
+
+		  <button type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信</button>
+		</form>
+		<!-- form書きの終わり -->
+
+    </div> <!-- manna_mainの終わり -->
+
+
     <footer>
       <p>follow us</p>
       <div id="manna_sns"><a href=""><i class="fa fa-facebook fa-1x"></i></a><a href=""><i class="fa fa-twitter fa-1x"></i></a><a href="https://www.instagram.com/glunoble/"><i class="fa fa-instagram fa-1x"></i></a></div>
