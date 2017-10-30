@@ -10282,11 +10282,14 @@ jQuery(function ($) {
             var entry = data[i];
             console.log(entry);
             // 投稿日
-            var pubDate = new Date(entry.pubDate);
+            var pubDate = new Date(entry.published);
             html += '<dt>' + pubDate.getFullYear() + '/' + ('0' + (pubDate.getMonth() + 1)).slice(-2) + '/' + ('0' + pubDate.getDate()).slice(-2) + '</dt>';
 
             // タイトル、リンク
             html += '<dd><a href="' + entry.link + '">' + entry.title + '</a></dd>';
+
+            // 文章
+            html += '<dd>' + entry.summary + '</dd>';
 
             if (! --feedCount) {
                 break;
