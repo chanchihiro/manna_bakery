@@ -10262,10 +10262,58 @@ var _jquery2 = _interopRequireDefault(_jquery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+(0, _jquery2.default)(function () {
+	console.log("ヨミコッm");
+	_jquery2.default.ajax({
+		url: '../rss.php',
+		xmlType: 'xml',
+		success: function success(xml) {
+			console.log("成功");
+			var row = 0;
+			var data = [];
+			var nodeName;
+			var output = (0, _jquery2.default)('#rss');
+			// start item 成形
+			(0, _jquery2.default)(xml).find('item').each(function () {
+				data[row] = {};
+				(0, _jquery2.default)(this).children().each(function () {
+					nodeName = (0, _jquery2.default)(this)[0].nodeName;
+					data[row][nodeName] = {};
+					attributes = (0, _jquery2.default)(this)[0].attributes;
+					for (var i in attributes) {
+						data[row][nodeName][attributes[i].name] = attributes[i].value;
+					}
+					data[row][nodeName]['text'] = (0, _jquery2.default)(this).text();
+				});
+				row++;
+			});
+			// end item 成形
+			output.wrapInner('<ul></ul>');
+			for (i in data) {
+				output.find('ul').append('<li><a href="' + data[i].link.text + '">' + data[i].title.text + '</a>' + data[i].description.text + '</li>');
+				console.log(data[i]);
+			}
+		}
+	});
+});
+
+},{"jquery":1}],3:[function(require,module,exports){
+'use strict';
+
+var _jquery = require('jquery');
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+var _login = require('./components/login.js');
+
+var _login2 = _interopRequireDefault(_login);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 // import character_action from './components/character_action.js';
 // こっからスタート
 document.addEventListener('DOMContentLoaded', function () {
   console.log('DOM読み込んだよ');
 });
 
-},{"jquery":1}]},{},[2]);
+},{"./components/login.js":2,"jquery":1}]},{},[3]);
