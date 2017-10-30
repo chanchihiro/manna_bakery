@@ -10262,39 +10262,38 @@ var _jquery2 = _interopRequireDefault(_jquery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _jquery2.default)(function () {
-	console.log("ヨミコッm");
-	_jquery2.default.ajax({
-		url: '../rss.php',
-		xmlType: 'xml',
-		success: function success(xml) {
-			console.log("成功");
-			var row = 0;
-			var data = [];
-			var nodeName;
-			var output = (0, _jquery2.default)('#rss');
-			// start item 成形
-			(0, _jquery2.default)(xml).find('item').each(function () {
-				data[row] = {};
-				(0, _jquery2.default)(this).children().each(function () {
-					nodeName = (0, _jquery2.default)(this)[0].nodeName;
-					data[row][nodeName] = {};
-					attributes = (0, _jquery2.default)(this)[0].attributes;
-					for (var i in attributes) {
-						data[row][nodeName][attributes[i].name] = attributes[i].value;
-					}
-					data[row][nodeName]['text'] = (0, _jquery2.default)(this).text();
-				});
-				row++;
-			});
-			// end item 成形
-			output.wrapInner('<ul></ul>');
-			for (i in data) {
-				output.find('ul').append('<li><a href="' + data[i].link.text + '">' + data[i].title.text + '</a>' + data[i].description.text + '</li>');
-				console.log(data[i]);
-			}
-		}
-	});
+jQuery(function ($) {
+    var $feedElement = $('#feed'),
+        feedUrl = $feedElement.data('feedUrl'),
+        feedCount = $feedElement.data('feedCount');
+
+    // フィードの取得
+    $.ajax('../rss.php', {
+        type: 'POST',
+        dataType: 'json',
+        async: true,
+        processData: true,
+        timeout: 10000,
+        data: { url: feedUrl }
+    }).done(function (data) {
+        var html = '';
+        // 取得した投稿データごとに繰り返す
+        for (var i = 0; i < data.length; i++) {
+            var entry = data[i];
+            console.log(entry);
+            // 投稿日
+            var pubDate = new Date(entry.pubDate);
+            html += '<dt>' + pubDate.getFullYear() + '/' + ('0' + (pubDate.getMonth() + 1)).slice(-2) + '/' + ('0' + pubDate.getDate()).slice(-2) + '</dt>';
+
+            // タイトル、リンク
+            html += '<dd><a href="' + entry.link + '">' + entry.title + '</a></dd>';
+
+            if (! --feedCount) {
+                break;
+            }
+        }
+        $feedElement.html(html);
+    });
 });
 
 },{"jquery":1}],3:[function(require,module,exports){
